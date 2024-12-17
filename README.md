@@ -1,7 +1,7 @@
 # Stocks-Hirish
 
 
-## Strategies (Add More)
+### Strategies (Add More)
 - sma_strategy1.py: A simple crossover strategy. Once the 10 day SMA exceeds the 20 day SMA buy more stock. Otherwise sell some stock.
 
 ### Purpose
