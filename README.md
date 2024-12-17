@@ -1,5 +1,9 @@
 # Stocks-Hirish
 
+
+## Strategies (Add More)
+- sma_strategy1.py: A simple crossover strategy. Once the 10 day SMA exceeds the 20 day SMA buy more stock. Otherwise sell some stock.
+
 ### Purpose
 - Play around with different strategies (simple) and decide on how to evaluate them (for fun :))
 - Pipeline: Scrape Data YFinance -> Create Strategy -> Backtest Strategy -> Repeat
@@ -11,7 +15,5 @@ The issue with backtesting is that you can overfit to historical data which will
 - Drawdown: A period of time when the stock decreases from a peak till it reaches the peak again. 
 - Volatility: Standard deviation of stock returns (per day?) over some given time period.
 
-### Strategies
-- sma_strategy1.py: A simple crossover strategy. Once the 10 day SMA exceeds the 20 day SMA buy more stock. Otherwise sell some stock.
 
 
