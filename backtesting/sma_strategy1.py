@@ -1,8 +1,6 @@
-from backtesting import Backtest, Strategy
+from backtesting import Strategy
 from backtesting.lib import crossover
-
-from backtesting.test import SMA, GOOG
-
+from backtesting.test import SMA
 
 class SmaCross(Strategy):
     def init(self):
@@ -15,9 +13,3 @@ class SmaCross(Strategy):
             self.buy()
         elif crossover(self.ma2, self.ma1):
             self.sell()
-
-
-bt = Backtest(GOOG, SmaCross, cash=10000, commission=.002,
-              exclusive_orders=True)
-stats = bt.run()
-print(stats)
