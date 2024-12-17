@@ -3,7 +3,7 @@ from backtesting.test import GOOG
 
 from sma_strategy1 import SmaCross
 
-s = '2009-09-01'
+s = '2003-09-01'
 f = '2011-09-15'
 def get_stats(start_date, end_date, data, cash):
     filtered_data = data[(data.index >= s)

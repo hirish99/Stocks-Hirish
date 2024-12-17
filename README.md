@@ -1,4 +1,17 @@
 # Stocks-Hirish
+### Setup
+
+```
+python3 -m venv ~/stocks 
+source ~/stocks/bin/activate
+python3 -m pip install backtesting
+```
+
+```
+source ~/stocks/bin/activate
+```
+
+
 
 
 ### Strategies (Add More)
