@@ -1,4 +1,8 @@
 # Stocks-Hirish
+
+### Purpose
+- Play around with different strategies (simple) and decide on how to evaluate them (for fun :))
+- Pipeline: Scrape Data YFinance -> Create Strategy -> Backtest Strategy -> Repeat
  
 ### Terminology
 - Backtesting: Asseses the viability of a trading model by simulating how it would have played out retrospectively.
