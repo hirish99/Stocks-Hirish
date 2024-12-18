@@ -1,10 +1,11 @@
 from backtesting import Backtest
-from backtesting.test import GOOG
-
+import datetime
+from scraper import get_history
 from sma_strategy1 import SmaCross
+import numpy as np
 
-s = '2003-09-01'
-f = '2011-09-15'
+s = np.datetime64('2003-09-01')
+f = np.datetime64('2011-09-15')
 def get_stats(start_date, end_date, data, cash):
     filtered_data = data[(data.index >= s)
                         & (data.index < f)]
@@ -14,8 +15,6 @@ def get_stats(start_date, end_date, data, cash):
     stats = bt.run()
     return stats
 
-
-
-stats = get_stats(s, f, GOOG, 10000)
+stats = get_stats(s, f, get_history('aapl'), 10000)
 print(stats)
 print(stats['Return (Ann.) [%]'])
