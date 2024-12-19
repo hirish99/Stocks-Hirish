@@ -30,22 +30,25 @@ class SmaCross2(Strategy):
     '''
     def init(self):
         price = self.data.Close
-        self.ma1 = self.I(SMA, price, 10)
-        self.ma2 = self.I(SMA, price, 20)
+        self.ma1 = self.I(SMA, price, 2)
+        self.ma2 = self.I(SMA, price, 10)
 
     def next(self):
         if crossover(self.ma1, self.ma2):
             self.buy()
         elif crossover(self.ma2, self.ma1):
-            self.sell(size=.5)
+            self.sell(size=1)
 
 s = np.datetime64('2020-01-01')
 f = np.datetime64('2024-01-01')
-stats1 = get_stats(s, f, get_history('aapl'), 10000, SmaCross1)
-stats2 = get_stats(s, f, get_history('aapl'), 10000, SmaCross2)
+stats1, _ = get_stats(s, f, get_history('aapl'), 10000, SmaCross1)
+stats2, _ = get_stats(s, f, get_history('aapl'), 10000, SmaCross2)
+#bt.plot()
 
-print(stats1)
-print(stats2)
-print("SMA Strat 1: ", stats1['Return (Ann.) [%]'])
-print("SMA Strat 2: ", stats2['Return (Ann.) [%]'])
+
+print("SMA Strat 1: ", stats1['Return [%]'])
+print("SMA Strat 2: ", stats2['Return [%]'])
 print("Buy/Hold Return: ", stats1['Buy & Hold Return [%]'])
+
+#print(stats2)
+#print(stats2['_trades'])

@@ -9,4 +9,4 @@ def get_stats(start_date, end_date, data, cash, strategy):
     bt = Backtest(filtered_data, strategy, cash=cash, commission=.002,
                 exclusive_orders=True)
     stats = bt.run()
-    return stats
+    return stats, bt
