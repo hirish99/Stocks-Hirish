@@ -11,7 +11,3 @@ def get_history(ticker, start=None, end=None):
     df.index = df.index.date
     df.index = df.index.astype("datetime64[ns]")
     return df
-
-goog_fake= get_history('GOOG')
-print(goog_fake.index)
-print(GOOG.index)
