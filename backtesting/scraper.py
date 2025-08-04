@@ -4,7 +4,7 @@ import numpy as np
 
 def get_history(ticker, start=None, end=None):
     tick = yf.Ticker(ticker)
-    if start==None or end==None:
+    if start==None and end==None:
         df = tick.history(period='max')[['Open','High','Low','Close','Volume']]
     else:
         df = tick.history(start=start,end=end)[['Open','High','Low','Close','Volume']]
