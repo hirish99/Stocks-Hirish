@@ -16,24 +16,20 @@ source ~/stocks/bin/activate
 ```
 python3 RothIRA/RothIRA.py
 ```
+The purpose of this repository is to give a generic RothIRA allocation strategy, for Fidelity users.
+
+What makes this strategy somewhat unique is that I have invested slightly into GOLD, and REITs.
+I invest into the total US market (FZROX), large cap (FXAIX), small cap stocks (FSDMX).
+I invest into the ex-US ETF (FTIHX) for diversification outside of America.
+I invest into REITs (FREL) for Real Estate.
+I invest into Bonds (FXNAX).
+Finally I invest in Gold as a hedge against inflation. 
+The US govt has proven that it will continue to spend more than it has, no matter what party is in control.
 
 
 
+<img width="3557" height="2955" alt="image" src="https://github.com/user-attachments/assets/6234bb9c-979e-4ef1-be5d-fd7be8077395" />
 
-
-### Strategies (Add More)
-- sma_strategy1.py: A simple crossover strategy. Once the 10 day SMA exceeds the 20 day SMA buy more stock. Otherwise sell some stock.
-
-### Purpose
-- Play around with different strategies (simple) and decide on how to evaluate them (for fun :))
-- Pipeline: Scrape Data YFinance -> Create Strategy -> Backtest Strategy -> Repeat
- 
-### Terminology
-- Backtesting: Asseses the viability of a trading model by simulating how it would have played out retrospectively.
-The issue with backtesting is that you can overfit to historical data which will yield garbage data w/respect to the future. 
-- Simple Moving Average (SMA): An average of a stocks-price taken for the past X days and stored continuously.
-- Drawdown: A period of time when the stock decreases from a peak till it reaches the peak again. 
-- Volatility: Standard deviation of stock returns (per day?) over some given time period.
 
 
 
