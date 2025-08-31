@@ -6,11 +6,17 @@ python3 -m venv ~/stocks
 source ~/stocks/bin/activate
 python3 -m pip install backtesting
 pip install yfinance
+pip install matplotlib
 ```
 
 ```
 source ~/stocks/bin/activate
 ```
+
+```
+python3 RothIRA/RothIRA.py
+```
+
 
 
 
