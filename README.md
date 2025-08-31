@@ -23,7 +23,7 @@ I invest into the total US market (FZROX), large cap (FXAIX), small cap stocks (
 I invest into the ex-US ETF (FTIHX) for diversification outside of America.
 I invest into REITs (FREL) for Real Estate.
 I invest into Bonds (FXNAX).
-Finally I invest in Gold as a hedge against inflation. 
+Finally I invest in Gold as a hedge against inflation, which is not Fidelity: https://www.ishares.com/us/products/239561/ishares-gold-trust-fund. 
 The US govt has proven that it will continue to spend more than it has, no matter what party is in control.
 
 
