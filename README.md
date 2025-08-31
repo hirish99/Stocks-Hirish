@@ -18,13 +18,15 @@ python3 RothIRA/RothIRA.py
 ```
 The purpose of this repository is to give a generic RothIRA allocation strategy, for Fidelity users.
 
-What makes this strategy somewhat unique is that I have invested slightly into GOLD, and REITs.
+What makes this strategy somewhat unique is that I have invested slightly into GOLD, and REITs. I explain the reason below.
 I invest into the total US market (FZROX), large cap (FXAIX), small cap stocks (FSDMX).
 I invest into the ex-US ETF (FTIHX) for diversification outside of America.
-I invest into REITs (FREL) for Real Estate.
-I invest into Bonds (FXNAX).
-Finally I invest in Gold as a hedge against inflation, which is not Fidelity: https://www.ishares.com/us/products/239561/ishares-gold-trust-fund. 
-The US govt has proven that it will continue to spend more than it has, no matter what party is in control.
+I invest into fixed-income Bonds (FXNAX).
+
+Finally I invest in Gold/REITs as a hedge against inflation, Gold which is not Fidelity: 
+https://www.ishares.com/us/products/239561/ishares-gold-trust-fund. 
+The US govt has proven that it will continue to spend more than it has, no matter what party is in control. 
+
 
 
 
