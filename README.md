@@ -16,7 +16,7 @@ source ~/stocks/bin/activate
 ```
 python3 RothIRA/RothIRA.py
 ```
-The purpose of this repository is to give a generic RothIRA allocation strategy, for Fidelity users.
+The purpose of this repository is to give a generic Roth IRA allocation strategy, for Fidelity users.
 I invest in Gold/REITs as a hedge against inflation. Gold cannot be purchased through Fidelity easily:
 https://www.ishares.com/us/products/239561/ishares-gold-trust-fund. 
 
